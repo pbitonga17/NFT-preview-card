@@ -1,0 +1,114 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-size: 62.5%;
+}
+body {
+    background-color: hsl(217, 54%, 11%);
+    display: flex;
+    justify-content: center;
+    color: white;
+    min-height: 100vh;
+    font-family: 'Outfit', sans-serif;
+}
+.image img {
+    min-width: 100%;
+    max-height: 350px;
+    object-fit: fill;
+    border-radius: 15px;
+}
+
+/** Overlay image -START **/
+.image {
+    position: relative;
+}
+.overlay-logo {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    background-color: cyan;
+    transition: .1s ease;
+}
+.overlay-logo:hover {
+    opacity: 0.8;
+}
+/** Overlay image -END **/
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+    background-color: hsl(216, 50%, 16%);
+    max-width: 30rem;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 5px 10px 8px black
+}
+.text {
+    margin-top: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.text a {
+    font-size: 2rem;
+    color: white;
+    font-weight: 600;
+    text-decoration: none;
+}
+.text p {
+    font-size: 1.8rem;
+    color: hsl(215, 51%, 70%);
+}
+.text a:hover {
+    color: cyan;
+}
+.text-icon {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    font-size: 3.7rem;
+    margin: 2.5rem 0;
+}
+.icon-1 {
+    display: flex;
+    gap: 0.7rem;
+    color: cyan;
+}
+.icon-2 {
+    display: flex;
+    gap: 0.7rem;
+    color: hsl(215, 51%, 70%);
+    grid-column-start: 3;
+}
+hr {
+    height: 1px;
+    background-color: hsl(215, 51%, 70%);
+    border: none;
+    max-width: 30rem;
+}
+.created-by {
+    display: flex;
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+.created-by img {
+    max-width: 3rem;
+    border: 1px solid white;
+    border-radius: 50%;
+}
+.created-by p {
+    font-size: 1.5rem;
+    color: hsl(215, 51%, 70%);
+    align-self: center;
+}
+.created-by a {
+    font-size: 1.5rem;
+    color: white;
+    text-decoration: none;
+}
+.created-by a:hover {
+    color: cyan;
+}
