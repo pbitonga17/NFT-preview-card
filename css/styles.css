@@ -34,15 +34,12 @@ body {
     border-radius: 15px;
 }
 .overlay:hover {
-    opacity: 0.7;
+    opacity: 0.8;
 }
 .eye-icon {
     position: absolute;
     top: 40%;
     left: 40%;
-    
-    
-    transition: .5s ease;
 }
 /** Overlay image -END **/
 .container {
